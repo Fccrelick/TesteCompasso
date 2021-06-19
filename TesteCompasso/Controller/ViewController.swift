@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         parser.automatedParse{
             data in
-            self.event.append(data)
+            self.event = data
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }

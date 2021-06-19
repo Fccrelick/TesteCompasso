@@ -8,10 +8,8 @@
 import Foundation
 
 struct Parser{
-    func automatedParse(comp: @escaping (Event) -> ()){
-        var count = 1
-        while count <= 5{
-        var apiURL = URL(string: "https://5f5a8f24d44d640016169133.mockapi.io/api/events/\(count)")
+    func automatedParse(comp: @escaping ([Event]) -> ()){
+        var apiURL = URL(string: "https://5f5a8f24d44d640016169133.mockapi.io/api/events/")
         let session = URLSession.shared
         let decoder = JSONDecoder()
         
@@ -22,9 +20,8 @@ struct Parser{
                 return
             }
             do{
-              let event = try decoder.decode(Event.self, from: data!)
-                print("=============event===========")
-                print(event)
+              let event = try decoder.decode([Event].self, from: data!)
+               
                 comp(event)
                 
             }catch{
@@ -32,7 +29,7 @@ struct Parser{
                 print(error)
             }
         }.resume()
-            count = count + 1
+            
         }
-    }
+    
 }
