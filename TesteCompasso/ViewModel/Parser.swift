@@ -8,7 +8,7 @@
 import Foundation
 
 struct Parser{
-    func automatedParse(){
+    func automatedParse(comp: @escaping (Event) -> ()){
         var count = 1
         while count <= 5{
         var apiURL = URL(string: "https://5f5a8f24d44d640016169133.mockapi.io/api/events/\(count)")
@@ -25,6 +25,7 @@ struct Parser{
               let event = try decoder.decode(Event.self, from: data!)
                 print("=============event===========")
                 print(event)
+                comp(event)
                 
             }catch{
                 print("================catch==============")

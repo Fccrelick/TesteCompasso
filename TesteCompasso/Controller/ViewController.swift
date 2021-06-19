@@ -8,13 +8,37 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    
     let parser = Parser()
-    let event = [Event]()
+    var event = [Event]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        parser.automatedParse()
+        parser.automatedParse{
+            data in
+            self.event.append(data)
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
+        tableView.dataSource = self
     }
 
 
 }
 
+extension ViewController: UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return event.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = event[indexPath.row].title
+        return cell
+    }
+    
+    
+}

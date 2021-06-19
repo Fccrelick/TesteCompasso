@@ -62,12 +62,12 @@
 		5EBF09AC267E6F640016BBD9 /* TesteCompasso */ = {
 			isa = PBXGroup;
 			children = (
+				5EBF09CA267E96630016BBD9 /* View */,
 				5EBF09C9267E87730016BBD9 /* Controller */,
 				5EBF09C6267E83D70016BBD9 /* ViewModel */,
 				5EBF09C1267E7D4E0016BBD9 /* Model */,
 				5EBF09AD267E6F640016BBD9 /* AppDelegate.swift */,
 				5EBF09AF267E6F640016BBD9 /* SceneDelegate.swift */,
-				5EBF09B3267E6F640016BBD9 /* Main.storyboard */,
 				5EBF09B6267E6F650016BBD9 /* Assets.xcassets */,
 				5EBF09B8267E6F650016BBD9 /* LaunchScreen.storyboard */,
 				5EBF09BB267E6F650016BBD9 /* Info.plist */,
@@ -98,6 +98,14 @@
 				5EBF09B1267E6F640016BBD9 /* ViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		5EBF09CA267E96630016BBD9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5EBF09B3267E6F640016BBD9 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
