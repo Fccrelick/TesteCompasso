@@ -27,6 +27,18 @@ class InitialTableViewCell: UITableViewCell {
     
     func setup(event: Event){
         
+        if let imageUrl = URL(string: event.image){
+
+        do{
+         let imageData = try Data(contentsOf: imageUrl)
+
+        let image = UIImage(data: imageData)
+            self.eventImage.image = image
+        }catch{
+           
+        }
+            
+        }
     
         self.titleLabel.text = event.title
         self.priceLabel.text = String(event.price)
