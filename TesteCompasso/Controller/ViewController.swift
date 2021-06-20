@@ -26,10 +26,10 @@ class ViewController: UIViewController {
         }
         self.configDelegates()
         self.registerCell()
-       
+        
     }
     
-
+    
     
     func configDelegates(){
         tableView?.delegate = self
@@ -38,7 +38,7 @@ class ViewController: UIViewController {
     func registerCell(){
         self.tableView?.register(UINib(nibName: "InitialTableViewCell", bundle: nil), forCellReuseIdentifier: "InitialTableViewCell")
     }
-
+    
 }
 
 extension ViewController: UITableViewDataSource{
@@ -47,7 +47,7 @@ extension ViewController: UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
+        
         let cell: InitialTableViewCell? = self.tableView.dequeueReusableCell(withIdentifier: "InitialTableViewCell", for: indexPath) as? InitialTableViewCell
         cell?.setup(event: self.event[indexPath.row])
         return cell ?? UITableViewCell()
@@ -56,7 +56,7 @@ extension ViewController: UITableViewDataSource{
 
 extension ViewController: UITableViewDelegate{
     
-
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         tableView.deselectRow(at: indexPath, animated: true)

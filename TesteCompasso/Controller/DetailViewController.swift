@@ -8,7 +8,7 @@
 import UIKit
 
 class DetailViewController: ViewController {
-
+    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
@@ -17,7 +17,7 @@ class DetailViewController: ViewController {
     var selectedPrice: String!
     var selectedDescription: String!
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.titleLabel.text = selectedTitle
@@ -25,7 +25,7 @@ class DetailViewController: ViewController {
         self.descriptionLabel.text = selectedDescription
     }
     
-
-
-
+    
+    
+    
 }
