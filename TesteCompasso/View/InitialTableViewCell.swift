@@ -13,7 +13,6 @@ class InitialTableViewCell: UITableViewCell {
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var eventImage: UIImageView!
     
-    static let nibName: String = "InitialTableViewCell"
     
 
     override func awakeFromNib() {
@@ -43,7 +42,7 @@ class InitialTableViewCell: UITableViewCell {
         }
     
         self.titleLabel.text = event.title
-        self.priceLabel.text = String(event.price)
+        self.priceLabel.text = "R$ \(String(event.price))"
         
         
     }

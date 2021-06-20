@@ -7,10 +7,6 @@
 
 import Foundation
 
-//struct Root: Codable {
-//    let results: [Event]
-//}
-
 struct People: Codable {
     let id: String
     let eventId: String

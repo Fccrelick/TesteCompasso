@@ -18,6 +18,7 @@
 		5EBF09C8267E84260016BBD9 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBF09C7267E84260016BBD9 /* Parser.swift */; };
 		5EBF09F3267EB2610016BBD9 /* InitialTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBF09F1267EB2610016BBD9 /* InitialTableViewCell.swift */; };
 		5EBF09F4267EB2610016BBD9 /* InitialTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EBF09F2267EB2610016BBD9 /* InitialTableViewCell.xib */; };
+		5EBF09F6267ED3FE0016BBD9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBF09F5267ED3FE0016BBD9 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		5EBF09C7267E84260016BBD9 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		5EBF09F1267EB2610016BBD9 /* InitialTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialTableViewCell.swift; sourceTree = "<group>"; };
 		5EBF09F2267EB2610016BBD9 /* InitialTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InitialTableViewCell.xib; sourceTree = "<group>"; };
+		5EBF09F5267ED3FE0016BBD9 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				5EBF09B1267E6F640016BBD9 /* ViewController.swift */,
+				5EBF09F5267ED3FE0016BBD9 /* DetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				5EBF09B0267E6F640016BBD9 /* SceneDelegate.swift in Sources */,
 				5EBF09F3267EB2610016BBD9 /* InitialTableViewCell.swift in Sources */,
 				5EBF09C5267E7E0A0016BBD9 /* Event.swift in Sources */,
+				5EBF09F6267ED3FE0016BBD9 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
