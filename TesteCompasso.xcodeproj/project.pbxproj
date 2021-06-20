@@ -75,8 +75,6 @@
 				5EBF09B6267E6F650016BBD9 /* Assets.xcassets */,
 				5EBF09B8267E6F650016BBD9 /* LaunchScreen.storyboard */,
 				5EBF09BB267E6F650016BBD9 /* Info.plist */,
-				5EBF09F1267EB2610016BBD9 /* InitialTableViewCell.swift */,
-				5EBF09F2267EB2610016BBD9 /* InitialTableViewCell.xib */,
 			);
 			path = TesteCompasso;
 			sourceTree = "<group>";
@@ -110,6 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				5EBF09B3267E6F640016BBD9 /* Main.storyboard */,
+				5EBF09F1267EB2610016BBD9 /* InitialTableViewCell.swift */,
+				5EBF09F2267EB2610016BBD9 /* InitialTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";

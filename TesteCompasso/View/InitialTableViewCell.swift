@@ -13,6 +13,8 @@ class InitialTableViewCell: UITableViewCell {
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var eventImage: UIImageView!
     
+    static let nibName: String = "InitialTableViewCell"
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -29,7 +29,8 @@ class ViewController: UIViewController {
     }
     func configTableView(){
         tableView.dataSource = self
-        self.tableView.register(UINib(nibName: "InitialTableViewCell", bundle: nil), forCellReuseIdentifier: "InitialTableViewCell")
+        let nib = InitialTableViewCell.nibName
+        self.tableView.register(UINib(nibName: nib, bundle: nil), forCellReuseIdentifier: nib)
         
     }
 
@@ -43,7 +44,7 @@ extension ViewController: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        let cell: InitialTableViewCell? = self.tableView.dequeueReusableCell(withIdentifier: "InitialTableViewCell", for: indexPath) as? InitialTableViewCell
+        let cell: InitialTableViewCell? = self.tableView.dequeueReusableCell(withIdentifier: InitialTableViewCell.nibName, for: indexPath) as? InitialTableViewCell
         cell?.setup(event: self.event[indexPath.row])
         return cell ?? UITableViewCell()
     }

@@ -9,11 +9,12 @@ import Foundation
 
 struct Parser{
     func Parse(comp: @escaping ([Event]) -> ()){
-        var apiURL = URL(string: "https://5f5a8f24d44d640016169133.mockapi.io/api/events/")
+        
         let session = URLSession.shared
         let decoder = JSONDecoder()
         
-        session.dataTask(with: apiURL!) { data, response, error in
+        if let apiURL = URL(string: "https://5f5a8f24d44d640016169133.mockapi.io/api/events/"){
+        session.dataTask(with: apiURL) { data, response, error in
             if error != nil{
                 print(error?.localizedDescription)
                 return
@@ -28,6 +29,7 @@ struct Parser{
         }.resume()
             
         }
+    }
 
     
 }
