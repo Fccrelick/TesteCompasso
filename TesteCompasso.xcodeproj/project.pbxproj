@@ -16,6 +16,8 @@
 		5EBF09C3267E7D700016BBD9 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBF09C2267E7D700016BBD9 /* People.swift */; };
 		5EBF09C5267E7E0A0016BBD9 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBF09C4267E7E0A0016BBD9 /* Event.swift */; };
 		5EBF09C8267E84260016BBD9 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBF09C7267E84260016BBD9 /* Parser.swift */; };
+		5EBF09F3267EB2610016BBD9 /* InitialTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBF09F1267EB2610016BBD9 /* InitialTableViewCell.swift */; };
+		5EBF09F4267EB2610016BBD9 /* InitialTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EBF09F2267EB2610016BBD9 /* InitialTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		5EBF09C2267E7D700016BBD9 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		5EBF09C4267E7E0A0016BBD9 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		5EBF09C7267E84260016BBD9 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		5EBF09F1267EB2610016BBD9 /* InitialTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialTableViewCell.swift; sourceTree = "<group>"; };
+		5EBF09F2267EB2610016BBD9 /* InitialTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InitialTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,8 @@
 				5EBF09B6267E6F650016BBD9 /* Assets.xcassets */,
 				5EBF09B8267E6F650016BBD9 /* LaunchScreen.storyboard */,
 				5EBF09BB267E6F650016BBD9 /* Info.plist */,
+				5EBF09F1267EB2610016BBD9 /* InitialTableViewCell.swift */,
+				5EBF09F2267EB2610016BBD9 /* InitialTableViewCell.xib */,
 			);
 			path = TesteCompasso;
 			sourceTree = "<group>";
@@ -167,6 +173,7 @@
 			files = (
 				5EBF09BA267E6F650016BBD9 /* LaunchScreen.storyboard in Resources */,
 				5EBF09B7267E6F650016BBD9 /* Assets.xcassets in Resources */,
+				5EBF09F4267EB2610016BBD9 /* InitialTableViewCell.xib in Resources */,
 				5EBF09B5267E6F640016BBD9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -183,6 +190,7 @@
 				5EBF09C8267E84260016BBD9 /* Parser.swift in Sources */,
 				5EBF09AE267E6F640016BBD9 /* AppDelegate.swift in Sources */,
 				5EBF09B0267E6F640016BBD9 /* SceneDelegate.swift in Sources */,
+				5EBF09F3267EB2610016BBD9 /* InitialTableViewCell.swift in Sources */,
 				5EBF09C5267E7E0A0016BBD9 /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,19 +11,26 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    
     let parser = Parser()
     var event = [Event]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        parser.automatedParse{
+        
+        parser.Parse{
             data in
             self.event = data
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
         }
+        self.configTableView()
+       
+    }
+    func configTableView(){
         tableView.dataSource = self
+        self.tableView.register(UINib(nibName: "InitialTableViewCell", bundle: nil), forCellReuseIdentifier: "InitialTableViewCell")
+        
     }
 
 
@@ -35,10 +42,13 @@ extension ViewController: UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = event[indexPath.row].title
-        return cell
+        //let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        //cell.textLabel?.text = event[indexPath.row].title
+        let cell: InitialTableViewCell? = self.tableView.dequeueReusableCell(withIdentifier: "InitialTableViewCell", for: indexPath) as? InitialTableViewCell
+        cell?.setup(event: self.event[indexPath.row])
+        return cell ?? UITableViewCell()
     }
     
     
 }
+
